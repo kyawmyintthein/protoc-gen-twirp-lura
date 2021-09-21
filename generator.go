@@ -29,9 +29,9 @@ import (
 	descriptor "google.golang.org/protobuf/types/descriptorpb"
 	plugin "google.golang.org/protobuf/types/pluginpb"
 
-	"github.com/kyawmyintthein/protoc-gen-twirp-lura/internal/gen"
-	"github.com/kyawmyintthein/protoc-gen-twirp-lura/internal/gen/stringutils"
-	"github.com/kyawmyintthein/protoc-gen-twirp-lura/internal/gen/typemap"
+	"github.com/kyawmyintthein/protoc-gen-twirplura/internal/gen"
+	"github.com/kyawmyintthein/protoc-gen-twirplura/internal/gen/stringutils"
+	"github.com/kyawmyintthein/protoc-gen-twirplura/internal/gen/typemap"
 	"github.com/pkg/errors"
 )
 

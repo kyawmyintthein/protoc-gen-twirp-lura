@@ -19,7 +19,7 @@ import (
 
 	descriptor "google.golang.org/protobuf/types/descriptorpb"
 
-	"github.com/kyawmyintthein/protoc-gen-twirp-lura/internal/gen/stringutils"
+	"github.com/kyawmyintthein/protoc-gen-twirplura/internal/gen/stringutils"
 )
 
 // goPackageOption interprets the file's go_package option.

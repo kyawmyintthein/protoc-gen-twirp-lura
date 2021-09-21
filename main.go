@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/kyawmyintthein/protoc-gen-twirp-lura/internal/gen"
+	"github.com/kyawmyintthein/protoc-gen-twirplura/internal/gen"
 )
 
 func main() {
