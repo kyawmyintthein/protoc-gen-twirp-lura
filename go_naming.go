@@ -68,12 +68,12 @@ func goPackageName(f *descriptor.FileDescriptorProto) (name string, explicit boo
 }
 
 // goFileName returns the output name for the generated Go file.
-func (t *twirp) goFileName(f *descriptor.FileDescriptorProto) string {
+func (t *twirpLura) goFileName(f *descriptor.FileDescriptorProto) string {
 	name := *f.Name // proto file name
 	if ext := path.Ext(name); ext == ".proto" || ext == ".protodevel" {
 		name = name[:len(name)-len(ext)] // remove extension
 	}
-	name += ".twirp.go" // add twirp extension
+	name += ".lura.go" // add twirp extension
 
 	// with paths=source_relative, the directory is the same as the proto file
 	if t.sourceRelativePaths {

@@ -78,4 +78,7 @@ func writeResponse(w io.Writer, resp *plugin.CodeGeneratorResponse) {
 	if err != nil {
 		Error(err, "writing response")
 	}
+	// if err := ioutil.WriteFile("example.twirplura.go", data, 0644); err != nil {
+	// 	panic(err)
+	// }
 }
