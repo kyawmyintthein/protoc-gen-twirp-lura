@@ -512,9 +512,10 @@ func (t *twirpLura) generateEncodeFunction(file *descriptor.FileDescriptorProto,
 		t.P(`    c.l.Error(err, "failed to unmarhsal : ",` + methodSignature + `)`)
 		t.P(`    return out, err`)
 		t.P(`  }`)
+		t.P(`    return out, err`)
 	}
 	t.P(`  }`)
-	t.P(`  return nil, twirp.InternalError(fmt.Sprintf("invalid %s", luratwirp.TwirpServiceIdentifierConst))`)
+	t.P(`  return nil, twirp.InternalError(fmt.Sprintf("invalid method %s", method))`)
 	t.P(`}`)
 }
 
