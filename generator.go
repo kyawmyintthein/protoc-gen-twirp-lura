@@ -472,7 +472,7 @@ func (t *twirpLura) generateInvokeFunction(file *descriptor.FileDescriptorProto,
 		t.P(`  if !ok {`)
 		t.P(`    return nil, twirp.InternalError("invalid protobuf message")`)
 		t.P(`  }`)
-		t.P(`  resp, err := c.service.` + servName + `(ctx, req)`)
+		t.P(`  resp, err := c.service.` + methName + `(ctx, req)`)
 		t.P(`  if err != nil {`)
 		t.P(`    c.l.Error(err, "failed to invoke : ",` + methodSignature + `)`)
 		t.P(`    return resp, err`)
